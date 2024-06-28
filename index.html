@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <label for="select">Algorithm</label>
+            <select name="" id="select">
+                <option value="fcfs">First Come First Serve, FCFS </option>
+                <option value="sjf">Shortest Job First, SJF (non-preemptive)</option>
+                <option value="srtf">Shortest Remaining Time First, SRTF</option>
+                <option value="rr" id="rr_opt">Round Robin, RR</option>
+            </select><br><br>
+            <label for="arrival">Arrival Time</label>
+            <input type="text" id="arrival" placeholder="e.g. 2 4 6 8" autocomplete="off" required><br><br>
+            <label for="burst">Burst Time</label>
+            <input type="text" id="burst" placeholder="e.g. 4 6 8 10" autocomplete="off" required><br><br>
+            <div class="rr">
+                <label for="rr">Time Quantum</label>
+                <input type="number" id="rr" placeholder="e.g. 2" autocomplete="off" required><br><br>
+            </div>
+            <div class="submition">
+                <button>Solve</button>
+                <button onclick="reset()" style="background-color: #943126 ;">Reset</button>
+            </div>
+        </div>
+        <div class="score">
+            <h2>Process Scheduling</h2><br>
+            <p id="para"></p><br>
+            <div class="for_table">
+                <table id="table_data">
+                    <tr>
+                        <td>Process</td>
+                        <td>Arrival Time</td>
+                        <td>Burst Time</td>
+                        <td>Completion Time</td>
+                        <td>Turn Around Time</td>
+                        <td>Waiting Time</td>
+                    </tr>
+                </table>
+            </div><br><br>
+        </div>
+    </div>
+    <div class="sign">Created by @ Vinay</div>
+</body>
+<script src="script.js"></script>
+</html>

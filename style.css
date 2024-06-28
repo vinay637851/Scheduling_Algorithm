@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    height: 97vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10vh;
+    background-color: aliceblue;
+}
+.sign{
+    height: 3vh;
+    background-color: aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav{
+    padding: 2vw;
+    height: 80vh;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 2px 0px, rgba(15,91,206,0.1) 0px 2px 32px 0px;
+    border-radius: 1rem;
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.score{
+    height: 80vh;
+    overflow-y: auto;
+    width: 70vw;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 2px 0px, rgba(15,91,206,0.1) 0px 2px 32px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding: 5vh 0vh 5vh 0vh;
+}
+.for_table{
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: 60vh;
+    overflow-y: auto;
+}
+table,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td{
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+}
+button{
+    height: 6vh;
+    width: 6vw;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: #0E6251;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+input,#select{
+    width: 20vw;
+    height: 5vh;
+    padding: 1vh;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+input:hover{
+    border-color: #2874A6;
+}
+input:focus{
+    outline: 1px solid #2874A6 ;
+    border-color: #2874A6;
+}
+#select:focus{
+    outline: 1px solid #2874A6;
+    border-color: #2874A6;
+}
+#select:hover{
+    border-color: #2874A6;
+}
+.submition{
+    display: flex;
+    justify-content: space-between;
+}
+.rr{
+    display: none;
+}
+.rr_on{
+    display: block;
+}
+#para{
+    padding: 1vh 2vh;
+    display: none;
+    background-color:#E8FFF7;
+}
+
+@media screen and (max-width:229px) and (min-width:140px) {
+    .container{
+        flex-direction: column;
+        height: 150vh;
+        justify-content: space-around;
+        padding-top: 0vh;
+        align-items: center;
+    }
+    input{
+        width: 200%;
+        height: 2rem;
+    }
+    #select{
+        width: 200%;
+        height: 2rem;
+    }
+    button{
+        width: 4.5rem;
+        height: 2.5rem;
+    }
+    .submition{
+        width: 200%;
+    }
+    .nav{
+        height: 60vh;
+        padding: 2vh;
+        width: 95%;
+        overflow-x: scroll;
+    }
+    .score{
+        height: 60vh;
+        width: 95%;
+        font-size: 12px;
+        align-items: left;
+    }
+    .for_table{
+        overflow-x: auto;
+        width: 90%;
+    }
+    td{
+        width: max-content;
+        height: 1.8rem;
+    }
+    table{
+        width: 270vw;
+    } 
+}
+@media screen and (max-width:373px) and (min-width:230px){
+    .container{
+        flex-direction: column;
+        height: 150vh;
+        justify-content: space-around;
+        padding-top: 0vh;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+        height: 2rem;
+    }
+    #select{
+        width: 100%;
+        height: 2rem;
+    }
+    button{
+        width: 5.5rem;
+        height: 2.5rem;
+    }
+    .submition{
+        width: 100%;
+    }
+    .nav{
+        height: 60vh;
+        padding: 2vh;
+        width: 95%;
+    }
+    .score{
+        height: 60vh;
+        width: 95%;
+        font-size: 12px;
+        align-items: left;
+    }
+    .for_table{
+        overflow-x: auto;
+        width: 90%;
+    }
+    td{
+        width: max-content;
+        height: 1.8rem;
+    }
+    table{
+        width: 270vw;
+    } 
+}
+@media screen and (max-width:431px) and (min-width:374px){
+    .container{
+        flex-direction: column;
+        height: 130vh;
+        justify-content: space-around;
+        padding-top: 0vh;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+    }
+    #select{
+        width: 100%;
+    }
+    button{
+        width: 5.5rem;
+        height: 2.5rem;
+    }
+    .nav{
+        height: 60vh;
+        padding: 2vh;
+        width: 95%;
+    }
+    .score{
+        height: 60vh;
+        width: 95%;
+        align-items: left;
+    }
+    .for_table{
+        overflow-x: auto;
+        width: 90%;
+    }
+    td{
+        width: max-content;
+    }
+    table{
+        width: 180vw;
+    }    
+}
+@media screen and (max-width:679px) and (min-width:601px){
+    .container{
+        flex-direction: column;
+        height: 130vh;
+        justify-content: space-around;
+        padding-top: 0vh;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+    }
+    #select{
+        width: 100%;
+    }
+    button{
+        width: 5.5rem;
+        height: 2.5rem;
+    }
+    .nav{
+        height: 60vh;
+        padding: 2vh;
+        width: 95%;
+    }
+    .score{
+        height: 60vh;
+        width: 95%;
+        align-items: left;
+    }
+    .for_table{
+        overflow-x: auto;
+        width: 90%;
+    }
+    td{
+        width: max-content;
+    }
+    table{
+        width: 110vw;
+    }
+}
+@media screen and (max-width:1025px) and (min-width:680px){
+    .container{
+        flex-direction: column;
+        height: 130vh;
+        justify-content: space-around;
+        padding-top: 0vh;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+    }
+    #select{
+        width: 100%;
+    }
+    button{
+        width: 5.5rem;
+        height: 2.5rem;
+    }
+    .nav{
+        height: 60vh;
+        padding: 2vh;
+        width: 95%;
+    }
+    .score{
+        height: 60vh;
+        width: 95%;
+        align-items: left;
+    }
+    .for_table{
+        overflow-x: auto;
+        width: 90%;
+    }
+    td{
+        width: max-content;
+    }
+    table{
+        width: 90vw;
+    }   
+}
+@media screen and (max-width:600px) and (min-width:432px){
+    .container{
+        flex-direction: column;
+        height: 130vh;
+        justify-content: space-around;
+        padding-top: 0vh;
+        align-items: center;
+    }
+    input{
+        width: 100%;
+    }
+    #select{
+        width: 100%;
+    }
+    button{
+        width: 5.5rem;
+        height: 2.5rem;
+    }
+    .nav{
+        height: 60vh;
+        padding: 2vh;
+        width: 95%;
+    }
+    .score{
+        height: 60vh;
+        width: 95%;
+        align-items: left;
+    }
+    .for_table{
+        overflow-x: auto;
+        width: 90%;
+    }
+    td{
+        width: max-content;
+    }
+    table{
+        width: 140vw;
+    }  
+}
