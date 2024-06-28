@@ -281,7 +281,7 @@ input:focus{
         width: 110vw;
     }
 }
-@media screen and (max-width:1100x) and (min-width:1001px){
+@media screen and (max-width:1100px) and (min-width:1001px){
     .container{
         flex-direction: column;
         height: 130vh;
