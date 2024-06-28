@@ -281,7 +281,47 @@ input:focus{
         width: 110vw;
     }
 }
-@media screen and (max-width:1025px) and (min-width:680px){
+@media screen and (max-width:1100x) and (min-width:1000px){
+    .container{
+        flex-direction: column;
+        height: 130vh;
+        justify-content: space-around;
+        padding-top: 0vh;
+        align-items: center;
+        font-size: 18px;
+    }
+    input{
+        width: 100%;
+    }
+    #select{
+        width: 100%;
+    }
+    button{
+        width: 5.5rem;
+        height: 2.5rem;
+    }
+    .nav{
+        height: 60vh;
+        padding: 2vh;
+        width: 95%;
+    }
+    .score{
+        height: 60vh;
+        width: 95%;
+        align-items: left;
+    }
+    .for_table{
+        overflow-x: auto;
+        width: 90%;
+    }
+    td{
+        width: max-content;
+    }
+    table{
+        width: 90vw;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:680px){
     .container{
         flex-direction: column;
         height: 130vh;
